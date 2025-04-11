@@ -1,0 +1,1086 @@
+/* 라이브러리 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");
+
+body {
+  font-family: "Pretendard";
+  color: 363636;
+}
+
+.con-min-width {
+  min-width: 1080px;
+}
+
+.color-w {
+  color: white;
+}
+
+.animation {
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+/* 라이브러리 끝 */
+/* 노말라이즈 */
+body,
+ul,
+li,
+h1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* 노말라이즈 끝 */
+/* 커스텀 시작 */
+.con_min_width {
+  min-width: 1920px;
+}
+
+@media (max-width: 403px) {
+  .PC {
+    display: none;
+  }
+}
+
+@media (min-width: 402px) {
+  .Mobile {
+    display: none;
+  }
+}
+/* 커스텀 끝 */
+/* 헤더 */
+/* Topbar 시작 */
+.Topbar {
+  background-color: #ff0844;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  z-index: 999;
+}
+
+.Topbar > div {
+  height: 100%;
+}
+
+.logo {
+  width: 104px;
+  height: 32px;
+}
+
+.Topbar > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.Topbar > div:nth-child(2) {
+  flex-grow: 1;
+}
+
+.Topbar > div > ul {
+  display: flex;
+  justify-content: space-around;
+  width: 410px;
+  height: 100%;
+}
+
+.Topbar > div > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 100%;
+}
+
+.Topbar > div:last-child {
+  margin-right: 80px;
+}
+
+.Topbar > div > ul > li a {
+  color: white;
+  font-size: 12px;
+  font-weight: medium;
+}
+
+.Topbar > div > ul > li a:hover {
+  font-weight: 700;
+}
+
+.Topbar > div > ul > li a.active {
+  border-bottom: 1px solid white;
+}
+
+.visited {
+  border-bottom: 1px solid white;
+}
+/* Topbar 끝 */
+/* 대표이미지 시작 */
+.PC .intro-bg {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.PC .intro > h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #363636;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.PC .intro-bg > img {
+  width: 100%;
+  height: 100%;
+}
+
+.PC .intro-bg > button {
+  width: 266px;
+  height: 73px;
+  background-color: #353535;
+  border-radius: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 83%;
+  left: 44%;
+  justify-content: center;
+}
+
+.PC .intro-bg > button img {
+  width: 24px;
+  height: 24px;
+  margin-left: 2px;
+}
+
+.PC .intro-bg > button span {
+  color: white;
+  font-size: 18px;
+}
+/* 대표이미지 끝 */
+/* 캠페인 소개 시작 */
+.PC .intro-campaign {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.PC .intro-campaign > .text-box {
+  display: inline-block;
+  margin-left: 120px;
+  margin-top: 60px;
+}
+
+.PC .intro-campaign > .text-box div {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.PC .intro-campaign > .text-box div span:first-child {
+  margin-bottom: 30px;
+}
+
+.PC .intro-campaign > .text-box img {
+  width: 354px;
+  height: 109px;
+}
+
+.PC .intro-campaign > .text-box span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.PC .intro-campaign > div:nth-child(2) {
+  width: 1040px;
+  margin: 73px 0 127px 880px;
+}
+
+.PC .intro-campaign > div h1 {
+  color: #b7b7b7;
+  font-weight: 900;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.PC .intro-campaign > div > div p {
+  font-size: 36px;
+  font-weight: bold;
+  color: #363636;
+  margin: 0;
+}
+
+.PC .intro-campaign > div > div span {
+  font-size: 16px;
+  font-weight: light;
+  color: #363636;
+  margin: 0;
+}
+
+.PC .intro-campaign > div > div .box {
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 15px 0;
+}
+
+.PC .intro-campaign > div > div .point {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 500px;
+  box-shadow: rgba(255, 0, 0, 0.55) 0px 0px 15px;
+}
+
+.PC .intro-campaign > div > div .line {
+  width: 978px;
+  height: 8px;
+  background: linear-gradient(to right, #4b2929, #ff3131);
+}
+
+.PC .intro-campaign > .box {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.PC .intro-campaign > .box > div {
+  margin: 80px 0 120px 0px;
+  width: 1040px;
+  height: 100%;
+}
+
+.PC .intro-bd {
+  width: 1679px;
+  height: 935px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.PC .intro-bd img {
+  width: 509px;
+  height: 645px;
+}
+
+.PC .intro-bd div {
+  position: relative;
+}
+
+.PC .intro-bd div:nth-child(2) {
+  margin-top: 145px;
+}
+
+.PC .intro-bd div:nth-child(3) {
+  margin-top: 290px;
+}
+
+.PC .intro-bd div > span {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 40px;
+  color: white;
+  position: absolute;
+  bottom: 35%;
+}
+
+.PC .bd-text-1 {
+  position: absolute;
+  bottom: 35%;
+  left: 8%;
+}
+
+.PC .bd-text-2 {
+  position: absolute;
+  top: 5%;
+  left: 8%;
+}
+
+.PC .bd-text-3 {
+  position: absolute;
+  top: 75%;
+  left: 8%;
+}
+/* 캠페인 소개 끝 */
+/* 활동 시작 */
+.slide-1,
+.slide-2 {
+  width: 1680px;
+  margin: 120px auto;
+  display: flex;
+  position: relative;
+}
+
+.slide-1 > .text-box {
+  margin-right: 550px;
+}
+
+.slide > .text-box h1 {
+  color: #b7b7b7;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.slide > .text-box p {
+  color: #ff0844;
+  margin: 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.PC .slide > .text-box span {
+  color: #363636;
+  font-size: 48px;
+  font-weight: 900;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 109px;
+}
+
+.slide > .swiper {
+  width: 480px;
+  height: 600px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #409a50;
+}
+
+.swiper-slide > img {
+  width: 216px;
+  height: 216;
+  margin: 50px 50px 149px 0;
+  display: flex;
+  justify-self: flex-end;
+}
+
+.swiper-slide > div {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 135px;
+  margin: 0 auto;
+}
+
+.swiper-slide > div > span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 0;
+}
+
+.swiper-slide > div > p {
+  font-size: 36px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.swiper-pagination-1 {
+  position: absolute !important;
+  bottom: 4% !important;
+  right: 4% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.swiper-pagination-2 {
+  position: absolute !important;
+  bottom: 4% !important;
+  right: 4% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+  top: auto !important;
+  transform: none !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: white !important;
+  opacity: 0.5;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff0844 !important;
+  opacity: 1;
+}
+
+.slide-2 > .Swiper-color {
+  background-color: white;
+}
+
+.slide-2 > .text-box {
+  margin-left: 250px;
+  margin-right: 322px;
+}
+/* 활동 끝 */
+/* 푸터 시작 */
+.PC .footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.PC .footer > .con {
+  width: 1681px;
+  margin: 0 auto;
+}
+
+.PC .footer .con div:not(:last-child) {
+  display: flex;
+  width: 1760px;
+  height: 36px;
+  align-items: flex-end;
+  flex-grow: 1;
+  padding-bottom: 10px;
+}
+
+.PC .footer .con div:first-child {
+  padding-top: 95px;
+  border-bottom: 1px solid #ededed;
+  width: 1681px;
+}
+
+.PC .footer .con div ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 520px;
+}
+
+.PC .footer .con div ul > li a {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.PC .footer .con div img {
+  width: 104px;
+  height: 32px;
+}
+
+.PC .footer .con div button {
+  width: 200px;
+  height: 36px;
+  background-color: #353535;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-left: 34px;
+}
+
+.PC .footer .con div button img {
+  width: 18px;
+  height: 18px;
+}
+
+.PC .footer .con div button span {
+  font-size: 12px;
+}
+
+.PC .footer .con div:nth-child(2) {
+  margin-top: 32px;
+  margin-bottom: 132px;
+  width: 1681px;
+}
+
+.PC .footer .con div:nth-child(2) > span {
+  font-size: 16px;
+}
+
+.PC .footer .con div:nth-child(2) > span:nth-child(2) {
+  color: #b7b7b7;
+  margin: 0 10px;
+}
+
+.PC .footer .con div:nth-child(2) > span:last-child {
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.PC .footer .con div:nth-child(3) {
+  width: 1681px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.PC .footer .con div:nth-child(3) > span {
+  color: #ff0844;
+  font-size: 18px;
+  width: 800px;
+  margin-right: 588px;
+}
+
+.PC .footer .con div:nth-child(3) img:nth-child(2) {
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.PC .footer .con div:nth-child(3) img:last-child {
+  width: 154px;
+  height: 30px;
+  margin-left: 14px;
+  cursor: pointer;
+}
+/* 푸터 끝 */
+
+/* Mobile */
+/* Topbar 시작 */
+.Mobile .Topbar {
+  background-color: #ff0844;
+  width: 402px;
+  height: 80px;
+  justify-content: center;
+  position: sticky;
+  top: 0%;
+  z-index: 999;
+}
+
+.Mobile .Topbar > div:first-child {
+  width: 330px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.Mobile .Topbar > ul img {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-self: center;
+}
+
+.Mobile .Topbar > ul > li {
+  position: relative;
+}
+
+.Mobile .Topbar > ul > li > ul {
+  background-color: white;
+  position: absolute;
+  top: 160%;
+  right: 20%;
+  width: 140px;
+  height: 146px;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  visibility: hidden;
+}
+
+.Mobile .Topbar > ul > li > ul.active {
+  visibility: visible;
+}
+
+.Mobile .Topbar > ul > li > ul > li {
+  margin-bottom: 20px;
+}
+
+.Mobile .Topbar a {
+  font-size: 12px;
+  font-weight: 500;
+}
+/* Topbar 끝 */
+/* 대표이미지 시작 */
+.Mobile .intro-bg {
+  width: 402px;
+  height: 633px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.Mobile .intro > h1 {
+  font-size: 18px;
+  font-weight: 900;
+  color: #363636;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 402px;
+  height: 80px;
+}
+
+.Mobile .intro-bg > img {
+  width: 402px;
+  height: 633px;
+}
+
+.Mobile .intro-bg > button {
+  width: 154px;
+  height: 48px;
+  background-color: #353535;
+  border-radius: 30px;
+  position: absolute;
+  top: 83%;
+  left: 32%;
+  justify-content: center;
+}
+
+.Mobile .intro-bg > button img {
+  width: 14px;
+  height: 14px;
+  margin-left: 2px;
+}
+
+.Mobile .intro-bg > button span {
+  color: white;
+  font-size: 14px;
+}
+/* 대표이미지 끝 */
+/* 캠페인 소개 시작 */
+.Mobile .intro-campaign {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Mobile .intro-campaign > .text-box {
+  display: inline-block;
+  margin-left: 18px;
+  width: 366px;
+  margin-top: 60px;
+}
+
+.Mobile .intro-campaign > .text-box div {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Mobile .intro-campaign > .text-box div span:first-child {
+  margin-bottom: 30px;
+}
+
+.Mobile .intro-campaign > .text-box img {
+  width: 180px;
+  height: 55px;
+}
+
+.Mobile .intro-campaign > .text-box span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.Mobile .intro-campaign > div h1 {
+  color: #b7b7b7;
+  font-weight: 900;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.Mobile .intro-campaign > div > div p {
+  font-size: 36px;
+  font-weight: bold;
+  color: #363636;
+  margin: 0;
+}
+
+.Mobile .intro-campaign > div > div span {
+  font-size: 16px;
+  font-weight: light;
+  color: #363636;
+  margin: 0;
+}
+
+.Mobile .intro-bd {
+  width: 402px;
+  height: 935px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.Mobile .intro-bd img {
+  width: 320px;
+  height: 400px;
+}
+
+.Mobile .intro-bd div {
+  position: relative;
+  margin-left: 18px;
+}
+
+.Mobile .intro-bd div:nth-child(2) {
+  margin-top: 20px;
+  margin-left: 64px;
+}
+
+.Mobile .intro-bd div:nth-child(3) {
+  margin-top: 20px;
+}
+
+.Mobile .intro-bd div > span {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 32px;
+  color: white;
+  position: absolute;
+}
+
+.Mobile .bd-text-1 {
+  position: absolute;
+  bottom: 8%;
+  left: 8%;
+}
+
+.Mobile .bd-text-2 {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+}
+
+.Mobile .bd-text-3 {
+  position: absolute;
+  top: 68%;
+  left: 8%;
+}
+
+.Mobile .start {
+  width: 384px;
+}
+
+.Mobile .start > div > div .box {
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 15px 0 15px 0px;
+}
+
+.Mobile .start h1 {
+  color: #b7b7b7;
+  margin-left: 18px;
+}
+
+.Mobile .start > div > div .point {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 500px;
+  box-shadow: rgba(255, 0, 0, 0.55) 0px 0px 15px;
+}
+
+.Mobile .start > div > div .line {
+  width: 222px;
+  height: 8px;
+  background: linear-gradient(to right, #4b2929, #ff3131);
+}
+
+.Mobile .start > div > div span {
+  font-size: 12px;
+  color: #ff0844;
+  margin-left: 100px;
+}
+
+.Mobile .start > div > div p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 115px;
+}
+
+.Mobile .start > .box {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.Mobile .start > .box > div {
+  margin: 80px 0 120px 0px;
+  width: 384px;
+  height: 100%;
+}
+/* 캠페인 소개 끝 */
+/* 활동 시작 */
+.Mobile .slide {
+  width: 402px;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+}
+
+.Mobile .slide-1 .text-box {
+  width: 366px;
+  height: 173px;
+  margin-bottom: 36px;
+  margin-left: 18px;
+}
+
+.Mobile .slide .text-box h1 {
+  color: #b7b7b7;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.Mobile .slide-1 > .text-box span {
+  color: #363636;
+  font-size: 26px;
+  font-weight: 900;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 109px;
+}
+
+.Mobile .slide > .swiper {
+  width: 336px;
+  height: 450px;
+  border-radius: 20px;
+  margin-left: 18px;
+  position: relative;
+  background-color: #409a50;
+}
+
+.Mobile .swiper-slide > img {
+  width: 150px;
+  height: 150px;
+  margin: 30px 30px 80px 0;
+  display: flex;
+  justify-self: flex-end;
+}
+
+.Mobile .swiper-slide > div {
+  display: flex;
+  flex-direction: column;
+  width: 278px;
+  height: 145px;
+  margin: 0 auto;
+}
+
+.Mobile .swiper-slide div span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 13px;
+  width: 100%;
+}
+
+.Mobile .swiper-slide > div > p {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.Mobile .slide-2 > .Swiper-color {
+  background-color: white;
+}
+
+.Mobile .slide-2 {
+  width: 402px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.Mobile .slide-2 > .text-box {
+  width: 366px;
+  height: 220px;
+  margin-left: 18px;
+  margin-top: 70px;
+}
+
+.Mobile .slide-2 > .text-box span {
+  color: #363636;
+  font-size: 26px;
+  font-weight: 900;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Mobile .slide-2 > .text-box p {
+  font-size: 12px;
+  height: 28px;
+}
+
+.Mobile .swiper-pagination-3 {
+  position: absolute !important;
+  bottom: 4% !important;
+  right: 4% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.Mobile .swiper-pagination-4 {
+  position: absolute !important;
+  bottom: 4% !important;
+  right: 4% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.Mobile .swiper-pagination-vertical.swiper-pagination-bullets,
+.Mobile .swiper-vertical > .swiper-pagination-bullets {
+  top: auto !important;
+  transform: none !important;
+}
+
+.Mobile .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: white !important;
+  opacity: 0.5;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.Mobile .swiper-pagination-bullet-active {
+  background: #ff0844 !important;
+  opacity: 1;
+}
+/* 활동 끝 */
+/* 푸터 시작 */
+.Mobile .footer {
+  width: 402px;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+
+.Mobile .footer > .con {
+  width: 366px;
+  margin: 0 auto;
+}
+
+.Mobile .footer .con div:first-child {
+  display: flex;
+  width: 366px;
+  height: 43px;
+}
+
+.Mobile .footer .con div:first-child {
+  padding-top: 95px;
+  border-bottom: 1px solid #ededed;
+  width: 366px;
+}
+
+.Mobile .footer .con div:nth-child(2) {
+  display: flex;
+  width: 366px;
+  height: 123px;
+}
+
+.Mobile .footer .con div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 520px;
+  height: 123px;
+}
+
+.Mobile .footer .con div:nth-child(4) {
+  display: flex;
+  width: 366px;
+  height: 15px;
+  margin-bottom: 5px;
+}
+
+.Mobile .footer .con div:nth-child(5) {
+  display: flex;
+  width: 366px;
+  height: 17px;
+}
+
+.Mobile .footer .con div ul > li a {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.Mobile .footer .con div img {
+  width: 96px;
+  height: 30px;
+}
+
+.Mobile .footer .con div button {
+  width: 131px;
+  height: 36px;
+  background-color: #353535;
+  border-radius: 20px;
+  border: none;
+  margin-left: 139px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Mobile .footer .con div button img {
+  width: 18px;
+  height: 18px;
+}
+
+.Mobile .footer .con div button span {
+  font-size: 12px;
+}
+
+.Mobile .footer .con div:nth-child(2) {
+  margin-top: 20px;
+  margin-bottom: 70px;
+  width: 366px;
+}
+
+.Mobile .footer .con div:nth-child(4) > span {
+  font-size: 12px;
+}
+
+.Mobile .footer .con div:nth-child(4) > span:nth-child(2) {
+  color: #b7b7b7;
+  margin: 0 10px;
+}
+
+.Mobile .footer .con div:nth-child(4) > span:last-child {
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.Mobile .footer .con div:nth-child(3) {
+  width: 366px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.Mobile .footer .con div:nth-child(3) img:first-child {
+  width: 84px;
+  height: 21px;
+  margin-right: 8px;
+}
+
+.Mobile .footer .con div:nth-child(3) img:nth-child(2) {
+  width: 106px;
+  height: 21px;
+}
+
+.Mobile .footer .con div:nth-child(5) > span {
+  color: #ff0844;
+  font-size: 12px;
+  width: 800px;
+  margin-top: 5px;
+}
+/* 푸터 끝 */

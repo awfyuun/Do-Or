@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="state-style.css" />
+    <link rel="stylesheet" href="Popup-style.css" />
+    <script src="script.js"></script>
+
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- lodash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="PC">
+      <header class="Topbar con_min_width">
+        <div><img class="logo" src="./image/logo.png" alt="" OnClick="location.href ='MainPage.html';" /></div>
+        <div></div>
+        <div>
+          <ul>
+            <li><a href="/Introduce.html">캠페인 소개</a></li>
+            <li><a href="/reservation.html">헌혈 예약</a></li>
+            <li><a class="visited" href="/state.html">헌혈 현황</a></li>
+            <li><a href="/goods.html">캠페인 굿즈</a></li>
+          </ul>
+        </div>
+      </header>
+      <section class="state con-min-width">
+        <div
+          class="con"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+        >
+          <div>
+            <h1>헌혈 현황</h1>
+            <span
+              >캠페인 시작일부터 현재까지<br />헌혈 현황을 확인할 수
+              있습니다.</span
+            >
+          </div>
+          <div class="flex-ai-c">
+            <img src="./image/ico_caption.png" alt="" /><span
+              >매일 오전 09:00 집계됩니다.
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="state state-1 con-min-width">
+        <div class="flex-ai-c">
+          <h1>적혈구제제 혈액보유량</h1>
+          <span>전혈헌혈로 채혈한 혈액 보유량입니다.</span>
+        </div>
+        <div>
+          <nav class="content-box flex-ai-c">
+            <div class="State-box-1">
+              <div class="flex-ai-c"><span>캠페인 시작일부터</span></div>
+              <div class="flex-ai-c">
+                <span class="date dark">2025년 3월 7일</span>
+                <p>까지</p>
+              </div>
+              <div class="flex-ai-c">
+                <p>평균</p>
+                <span class="blood-state red">5.2일분</span>
+                <p>의 혈액이 모였어요!</p>
+              </div>
+            </div>
+            <div class="State-box-2">
+              <div class="blood-box">
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-1">3.2일</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-2">4.4일</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-3">5.3일</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-4">5.1일</span>
+                </div>
+              </div>
+              <div class="blood dark">
+                <p>A형</p>
+                <p>B형</p>
+                <p>O형</p>
+                <p>AB형</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="state state-2 con-min-width">
+        <div class="flex-ai-c">
+          <h1>혈소판제제 혈액보유량</h1>
+          <span>성분헌혈로 채혈한 혈액 보유량입니다.</span>
+        </div>
+        <div>
+          <nav class="content-box flex-ai-c">
+            <div class="State-box-1">
+              <div class="flex-ai-c"><span>캠페인 시작일부터</span></div>
+              <div class="flex-ai-c">
+                <span class="date dark">2025년 3월 7일</span>
+                <p>까지</p>
+              </div>
+              <div class="flex-ai-c">
+                <p>평균</p>
+                <span class="blood-state red">3.5일분</span>
+                <p>의 혈액이 모였어요!</p>
+              </div>
+            </div>
+            <div class="State-box-2">
+              <div class="blood-box">
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-1">3일</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-2">3.5일</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-3">4일</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-4">3.5일</span>
+                </div>
+              </div>
+              <div class="blood dark">
+                <p>A형</p>
+                <p>B형</p>
+                <p>O형</p>
+                <p>AB형</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="state state-3 con-min-width">
+        <div class="flex-ai-c">
+          <h1>혈액형별 참여 인원</h1>
+          <span>혈액형별 참여 현황입니다.</span>
+        </div>
+        <div>
+          <nav class="content-box flex-ai-c">
+            <div class="State-box-1">
+              <div class="flex-ai-c"><span>캠페인 시작일부터</span></div>
+              <div class="flex-ai-c">
+                <span class="date dark">2025년 3월 7일</span>
+                <p>까지</p>
+              </div>
+              <div class="flex-ai-c">
+                <span class="blood-state">1,080명</span>
+                <p>이 참여했어요!</p>
+              </div>
+            </div>
+            <div class="State-box-2">
+              <div class="blood-box">
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-1">360명</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-2">320명</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-3">240명</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-4">160명</span>
+                </div>
+              </div>
+              <div class="blood dark">
+                <p>A형</p>
+                <p>B형</p>
+                <p>O형</p>
+                <p>AB형</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="state state-4 con-min-width">
+        <div class="flex-ai-c">
+          <h1>시간대별 헌혈 현황</h1>
+          <span>시간대별 헌혈 참여 현황입니다.</span>
+        </div>
+        <div>
+          <nav class="content-box flex-ai-c">
+            <div class="State-box-1">
+              <div class="flex-ai-c"><span>캠페인 시작일부터</span></div>
+              <div class="flex-ai-c">
+                <span class="date dark">2025년 3월 7일</span>
+                <p>까지</p>
+              </div>
+              <div class="flex-ai-c">
+                <span class="blood-state red">5시</span>
+                <p>에 참여율이 가장 높아요!</p>
+              </div>
+            </div>
+            <div class="State-box-2">
+              <div class="blood-box">
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+              </div>
+              <div class="blood dark">
+                <p>10시</p>
+                <p>11시</p>
+                <p>12시</p>
+                <p>1시</p>
+                <p>2시</p>
+                <p>3시</p>
+                <p>4시</p>
+                <p>5시</p>
+                <p>6시</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="footer con-min-width">
+        <div class="con">
+          <div>
+            <img src="./image/img_footer_logo.png" alt="이미지" />
+            <button class="btn_notification">
+              <img src="./image/ico_noti.png" alt="" />
+              <span class="color-w">캠페인 알림 신청</span>
+            </button>
+            <div></div>
+            <ul>
+              <li>
+                <a href="/Introduce.html" class="menu-link">캠페인 소개</a>
+              </li>
+              <li>
+                <a href="/reservation.html" class="menu-link">헌혈 예약</a>
+              </li>
+              <li><a href="/state.html" class="menu-link">헌혈 현황</a></li>
+              <li><a href="/goods.html" class="menu-link">캠페인 굿즈</a></li>
+            </ul>
+          </div>
+          <div>
+            <span>서울특별시 OO구 12355</span>
+            <span>|</span>
+            <span>캠페인 문의</span>
+            <span>1234-567</span>
+          </div>
+          <div>
+            <span>Copyright © Do&Or. All Rights Reserved.</span>
+            <img
+              src="./image/img_footer_logo-2.png"
+              alt=""
+              OnClick="location.href ='https://bloodinfo.net/knrcbs/main.do';"
+            />
+            <img
+              src="./image/img_footer_logo-3.png"
+              alt=""
+              OnClick="location.href ='https://www.redcross.or.kr/main/main.do';"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="Bg">
+        <div class="Popup">
+          <div class="PopupArea">
+            <img class="clear" src="./image/ico_clear.png" alt="" />
+            <div></div>
+            <form
+              target="_blank"
+              action="https://formspree.io/f/mnnnogvk"
+              method="POST"
+              onsubmit="sendEmailForm(this);"
+            >
+              <div>
+                알림을 받을 이메일을 입력해주세요.
+                <br />
+                <div>
+                  *캠페인 시작 시, 입력하신 이메일로 알림을 보내드립니다.
+                </div>
+                <input
+                  type="email"
+                  name="_replyto"
+                  placeholder="이메일을 입력해주세요."
+                  required
+                />
+              </div>
+              <div>
+                <button name="submit1" type="sumbit">신청</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <div class="Mobile">
+      <header class="Topbar">
+        <div>
+          <img
+            class="logo"
+            src="./image/logo.png"
+            alt=""
+            OnClick="location.href ='MainPage.html';"
+          />
+        </div>
+        <ul>
+          <li>
+            <img src="./image/ico_arrow.png" alt="" />
+            <ul>
+              <li><a href="/Introduce.html">캠페인 소개</a></li>
+              <li><a href="/reservation.html">헌혈 예약</a></li>
+              <li><a href="/state.html">헌혈 현황</a></li>
+              <li><a href="/goods.html">캠페인 굿즈</a></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+      <section class="state">
+        <div
+          class="con"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+        >
+          <div>
+            <h1>헌혈 현황</h1>
+            <span
+              >캠페인 시작일부터 현재까지<br />헌혈 현황을 확인할 수
+              있습니다.</span
+            >
+          </div>
+          <div>
+            <img src="./image/ico_caption.png" alt="" /><span
+              >매일 오전 09:00 집계됩니다.
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="state state-1">
+        <div class="flex-ai-c">
+          <h1>적혈구제제 혈액보유량</h1>
+          <span>전혈헌혈로 채혈한 혈액 보유량입니다.</span>
+        </div>
+        <div>
+          <nav class="content-box flex-ai-c">
+            <div class="State-box-1">
+              <div><span>캠페인 시작일부터</span></div>
+              <div class="flex-ai-c">
+                <span class="date dark">2025년 3월 7일</span>
+                <p>까지</p>
+              </div>
+              <div class="flex-ai-c">
+                <p>평균</p>
+                <span class="blood-state red">5.2일분</span>
+                <p>의 혈액이 모였어요!</p>
+              </div>
+            </div>
+            <div class="State-box-2">
+              <div class="blood-box">
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-1">3.2일</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-2">4.4일</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-3">5.3일</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-4">5.1일</span>
+                </div>
+              </div>
+              <div class="blood dark">
+                <p>A형</p>
+                <p>B형</p>
+                <p>O형</p>
+                <p>AB형</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      </section>
+      <section class="state state-2">
+        <div class="flex-ai-c">
+          <h1>혈소판제제 혈액보유량</h1>
+          <span>성분헌혈로 채혈한 혈액 보유량입니다.</span>
+        </div>
+        <div>
+          <nav class="content-box flex-ai-c">
+            <div class="State-box-1">
+              <div class="flex-ai-c"><span>캠페인 시작일부터</span></div>
+              <div class="flex-ai-c">
+                <span class="date dark">2025년 3월 7일</span>
+                <p>까지</p>
+              </div>
+              <div class="flex-ai-c">
+                <p>평균</p>
+                <span class="blood-state red">3.5일분</span>
+                <p>의 혈액이 모였어요!</p>
+              </div>
+            </div>
+            <div class="State-box-2">
+              <div class="blood-box">
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-1">3일</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-2">3.5일</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-3">4일</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-4">3.5일</span>
+                </div>
+              </div>
+              <div class="blood dark">
+                <p>A형</p>
+                <p>B형</p>
+                <p>O형</p>
+                <p>AB형</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="state state-3">
+        <div class="flex-ai-c">
+          <h1>혈액형별 참여 인원</h1>
+          <span>혈액형별 참여 현황입니다.</span>
+        </div>
+        <div>
+          <nav class="content-box flex-ai-c">
+            <div class="State-box-1">
+              <div class="flex-ai-c"><span>캠페인 시작일부터</span></div>
+              <div class="flex-ai-c">
+                <span class="date dark">2025년 3월 7일</span>
+                <p>까지</p>
+              </div>
+              <div class="flex-ai-c">
+                <span class="blood-state">1,080명</span>
+                <p>이 참여했어요!</p>
+              </div>
+            </div>
+            <div class="State-box-2">
+              <div class="blood-box">
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-1">360명</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-2">320명</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-3">240명</span>
+                </div>
+                <div>
+                  <div class="active-on-visible can-active-once animation"></div>
+                  <span class="day-4">160명</span>
+                </div>
+              </div>
+              <div class="blood dark">
+                <p>A형</p>
+                <p>B형</p>
+                <p>O형</p>
+                <p>AB형</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="state state-4">
+        <div class="flex-ai-c">
+          <h1>시간대별 헌혈 현황</h1>
+          <span>시간대별 헌혈 참여 현황입니다.</span>
+        </div>
+        <div>
+          <nav class="content-box flex-ai-c">
+            <div class="State-box-1">
+              <div class="flex-ai-c"><span>캠페인 시작일부터</span></div>
+              <div class="flex-ai-c">
+                <span class="date dark">2025년 3월 7일</span>
+                <p>까지</p>
+              </div>
+              <div class="flex-ai-c">
+                <span class="blood-state red">5시</span>
+                <p>에 참여율이 가장 높아요!</p>
+              </div>
+            </div>
+            <div class="State-box-2">
+              <div class="blood-box">
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+                <div class="active-on-visible can-active-once animation"></div>
+              </div>
+              <div class="blood dark">
+                <p>10시</p>
+                <p>11시</p>
+                <p>12시</p>
+                <p>1시</p>
+                <p>2시</p>
+                <p>3시</p>
+                <p>4시</p>
+                <p>5시</p>
+                <p>6시</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="con">
+          <div>
+            <img src="./image/img_footer_logo.png" alt="이미지" />
+            <button class="flex-ai-c btn_notification-m">
+              <img src="./image/ico_noti.png" alt="" />
+              <span class="color-w">캠페인 알림 신청</span>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li><a href="/Introduce.html">캠페인 소개</a></li>
+              <li><a href="/reservation.html">헌혈 예약</a></li>
+              <li><a href="/state.html">헌혈 현황</a></li>
+              <li><a href="/goods.html">캠페인 굿즈</a></li>
+            </ul>
+          </div>
+          <div>
+            <img
+              src="./image/img_footer_logo-2.png"
+              alt=""
+              OnClick="location.href ='https://bloodinfo.net/knrcbs/main.do';"
+            />
+            <img
+              src="./image/img_footer_logo-3.png"
+              alt=""
+              OnClick="location.href ='https://www.redcross.or.kr/main/main.do';"
+            />
+          </div>
+          <div>
+            <span>서울특별시 OO구 12355</span>
+            <span>|</span>
+            <span>캠페인 문의</span>
+            <span>1234-567</span>
+          </div>
+          <div>
+            <span>Copyright © Do&Or. All Rights Reserved.</span>
+          </div>
+        </div>
+      </section>
+      <section class="Bg-m">
+        <div class="Popup">
+          <img class="clear-m" src="./image/ico_clear.png" alt="" />
+          <div class="PopupArea">
+            <div></div>
+            <form
+              target="_blank"
+              action="https://formspree.io/f/mnnnogvk"
+              method="POST"
+              onsubmit="sendEmailForm(this);"
+            >
+              <div>
+                알림을 받을 이메일을 입력해주세요.
+                <br />
+                <div>
+                  *캠페인 시작 시, 입력하신 이메일로 알림을 보내드립니다.
+                </div>
+                <input
+                  type="email"
+                  name="_replyto"
+                  placeholder="이메일을 입력해주세요."
+                  required
+                />
+              </div>
+              <div>
+                <button name="submit1" type="sumbit">신청</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    //AOS
+    AOS.init();
+
+    //발견되면 활성화시키는 라이브러리
+    function ActiveOnVisible__init() {
+      $(".active-on-visible").each(function (index, node) {
+        var $node = $(node);
+
+        var onFuncName = $node.attr("data-active-on-visible-on-func-name");
+        var offFuncName = $node.attr("data-active-on-visible-off-func-name");
+
+        $node.data("data-active-on-visible-on-func-name", onFuncName);
+        $node.data("data-active-on-visible-off-func-name", offFuncName);
+      });
+
+      $(window).resize(_.debounce(ActiveOnVisible__initOffset, 500));
+      ActiveOnVisible__initOffset();
+
+      $(window).scroll(_.debounce(ActiveOnVisible__checkAndActive, 50));
+      ActiveOnVisible__checkAndActive();
+    }
+
+    function ActiveOnVisible__initOffset() {
+      var windowHeight = $(window).height();
+
+      $(".active-on-visible:not(.actived)").each(function (index, node) {
+        var $node = $(node);
+
+        var offsetTop = $node.offset().top;
+
+        var matrix = $node
+          .css("transform")
+          .replace(/[^0-9\-.,]/g, "")
+          .split(",");
+        var translateX = matrix[12] || matrix[4];
+        var translateY = matrix[13] || matrix[5];
+
+        if (translateY) {
+          offsetTop -= translateY;
+        }
+
+        $node.attr("data-active-on-visible-offsetTop", offsetTop);
+        $node.data("data-active-on-visible-offsetTop", offsetTop);
+
+        if (!$node.attr("data-active-on-visible-diff-y")) {
+          $node.attr("data-active-on-visible-diff-y", "0");
+        }
+
+        if (!$node.attr("data-active-on-visible-delay")) {
+          $node.attr("data-active-on-visible-delay", "0");
+        }
+
+        var diffY = $node.attr("data-active-on-visible-diff-y");
+        var delay = $node.attr("data-active-on-visible-delay");
+
+        if (diffY.substr(-2, 2) == "vh") {
+          diffY = parseInt(diffY);
+
+          diffY = windowHeight * (diffY / 100);
+        } else if (diffY.substr(-1, 1) == "%") {
+          diffY = parseInt(diffY);
+
+          diffY = $node.height() * (diffY / 100);
+        } else {
+          diffY = parseInt(diffY);
+        }
+
+        $node.attr("data-active-on-visible-diff-y-real", diffY);
+        $node.data("data-active-on-visible-diff-y", diffY);
+        $node.data("data-active-on-visible-delay", delay);
+      });
+
+      ActiveOnVisible__checkAndActive();
+    }
+
+    function ActiveOnVisible__checkAndActive() {
+      $(".active-on-visible:not(.actived)").each(function (index, node) {
+        var $node = $(node);
+
+        var offsetTop = $node.data("data-active-on-visible-offsetTop") * 1;
+        var diffY = parseInt($node.data("data-active-on-visible-diff-y"));
+        var delay = parseInt($node.data("data-active-on-visible-delay"));
+
+        var onFuncName = $node.data("data-active-on-visible-on-func-name");
+        var offFuncName = $node.data("data-active-on-visible-off-func-name");
+
+        var scrollTop = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        var nodeHeight = $node.height();
+
+        if (scrollTop + windowHeight + diffY > offsetTop) {
+          setTimeout(function () {
+            if ($node.hasClass("active") == false) {
+              $node.addClass("active");
+
+              if ($node.hasClass("can-active-once")) {
+                $node.addClass("actived");
+              }
+
+              if (window[onFuncName]) {
+                window[onFuncName]($node);
+              }
+            }
+          }, delay);
+        } else {
+          if ($node.hasClass("active")) {
+            $node.removeClass("active");
+
+            if (window[offFuncName]) {
+              window[offFuncName]($node);
+            }
+          }
+        }
+      });
+    }
+
+    document.querySelectorAll('.active-on-visible').forEach(function (el) {
+    el.classList.add('active');
+});
+
+//Mobile TopBar
+function TopBar__init() {
+    $(".Mobile .Topbar > ul img").click(function (e) {
+      e.stopPropagation(); // 이벤트 버블링 방지
+      $(".Mobile .Topbar > ul > li > ul").addClass("active");
+    });
+
+    $(document).click(function () {
+      $(".Mobile .Topbar > ul > li > ul").removeClass("active");
+    });
+
+    $(".Mobile .Topbar > ul > li > ul").click(function (e) {
+      e.stopPropagation(); // 드롭다운 내부 클릭 시 닫힘 방지
+    });
+    }
+
+    TopBar__init();
+
+  //캠페인 알림 신청 팝업
+      function Popup__show() {
+      $(".bg").addClass("active");
+      $("body").css("overflow", "hidden");
+    }
+
+    function Popup__hide() {
+      $(".bg").removeClass("active");
+      $("body").css("overflow", "visible");
+    }
+
+    function Popup__init() {
+      $(".btn_notification").click(function () {
+        Popup__show();
+      });
+
+      $(".clear").click(function () {
+        Popup__hide();
+      });
+    }
+
+    $(document).ready(function () {
+      Popup__init(); // 문서가 준비되면 초기화
+    });
+
+    //캠페인 알림 신청 팝업
+    function Popup__show() {
+      $(".Bg").addClass("active");
+      $("body").css("overflow", "hidden");
+    }
+
+    function Popup__hide() {
+      $(".Bg").removeClass("active");
+      $("body").css("overflow", "visible");
+    }
+
+    function Popup__init() {
+      $(".btn_notification").click(function () {
+        Popup__show();
+      });
+
+      $(".clear").click(function () {
+        Popup__hide();
+      });
+    }
+
+    $(document).ready(function () {
+      Popup__init(); // 문서가 준비되면 초기화
+    });
+
+    //Mobile 캠페인 알림 신청 팝업
+    function Popup__show_m() {
+      $(".Bg-m").addClass("active");
+      $("body").css("overflow", "hidden");
+    }
+
+    function Popup__hide_m() {
+      $(".Bg-m").removeClass("active");
+      $("body").css("overflow", "visible");
+    }
+
+    function Popup__init_m() {
+      $(".btn_notification-m").click(function () {
+        Popup__show_m();
+      });
+
+      $(".clear-m").click(function () {
+        Popup__hide_m();
+      });
+    }
+
+    $(document).ready(function () {
+      Popup__init_m(); // 문서가 준비되면 초기화
+    });
+  </script>
+</html>

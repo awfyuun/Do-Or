@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Introduce-style.css" />
+    <link rel="stylesheet" href="Popup-style.css" />
+    <script src="script.js"></script>
+
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- slick slide -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="PC">
+      <header class="Topbar con_min_width">
+        <div>
+          <img
+            class="logo"
+            src="./image/logo.png"
+            alt=""
+            OnClick="location.href ='MainPage.html';"
+          />
+        </div>
+        <div></div>
+        <div>
+          <ul>
+            <li><a class="visited" href="/Introduce.html">캠페인 소개</a></li>
+            <li><a href="/reservation.html">헌혈 예약</a></li>
+            <li><a href="/state.html">헌혈 현황</a></li>
+            <li><a href="/goods.html">캠페인 굿즈</a></li>
+          </ul>
+        </div>
+      </header>
+      <section class="intro">
+        <h1>Do&Or은 헌혈의 중요성을 알리기 위해 시작했습니다.</h1>
+      </section>
+      <section class="intro-bg con-min-width">
+        <img src="./image/img_introduce-bg.png" alt="이미지" />
+        <button class="btn_notification flex-ai-c">
+          <img src="./image/ico_noti.png" alt="" />
+          <span>캠페인 알림 신청</span>
+        </button>
+      </section>
+      <section class="intro-campaign con-min-width">
+        <div class="text-box">
+          <img src="./image/introduce-logo.png" alt="" />
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+          >
+            <span>
+              헌혈(Blood Dontaion)의 기증자(Donor)를 뜻하는 단어에
+              <br />“Do&Or”이라는 새로운 의미를 담았습니다.
+            </span>
+            <span>
+              헌혈의 중요성을 알리는 캠페인 확산에 보탬이 되어 달라는 사회공헌적
+              <br />의미를 담고 있습니다. 직접 헌혈에 참여하시는 분 뿐만 아니라
+              헌혈의 <br />중요성을 함께 알리는 분들과 다양한 방식으로 사회에
+              기여할 수 있는 <br />방법을 고민하고 있습니다.
+            </span>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+        >
+          <h1
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1800"
+          >
+            캠페인 개최 현황
+          </h1>
+          <div>
+            <p>2025년</p>
+            <div class="box">
+              <div class="point"></div>
+              <div class="line"></div>
+            </div>
+            <span>제1회 Do&Or 캠페인</span>
+          </div>
+        </div>
+      </section>
+      <section class="intro-bd con-min-width">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="3000"
+        >
+          <img src="./image/img_bd-1.png" alt="" />
+          <span class="bd-text-1"
+            >혈액은<br />인공적인 물질로<br />대체할 수 없어요.</span
+          >
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="3000"
+        >
+          <img src="./image/img_bd-2.png" alt="" />
+          <span class="bd-text-2"
+            >혈액은<br />장기보관이 어려워<br />적정 보유량을<br />확보해야
+            해요.</span
+          >
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="3000"
+        >
+          <img src="./image/img_bd-3.png" alt="" />
+          <span class="bd-text-3"
+            >혈액은<br />윤리적 문제로<br />상업적 유통이 불가해요.</span
+          >
+        </div>
+      </section>
+      <section class="slide slide-1 con-min-width">
+        <div
+          class="text-box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+        >
+          <h1>활동</h1>
+          <span>
+            캠페인 준비부터 캠페인 종료까지<br />다양한 프로그램으로<br />생명을
+            살리는 일에<br />기여하고자 노력하고 있습니다.
+          </span>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./image/img_card-1.png" alt="" />
+              <div>
+                <p class="color-w">헌혈 버스 운영</p>
+                <span class="color-w">
+                  최신 장비와 전문 의료진과 함께하는<br />이동식 헌혈 공간으로,
+                  다양한 장소에서<br />보다 쉽게 헌혈에 참여할 수 있습니다.
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/img_card-2.png" alt="" />
+              <div>
+                <p class="color-w">캠페인 지원자 모집</p>
+                <span class="color-w">
+                  캠페인 진행을 위한 지원자를 모집하고 있습니다.
+                  <br />참여를 원하시는분께서는 캠페인 문의처로 연락 주시면
+                  <br />안내해 드리고 있습니다. 많은 참여 부탁드립니다.
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/img_card-3.png" alt="" />
+              <div>
+                <p class="color-w">부스별 프로그램 구성</p>
+                <span class="color-w">
+                  헌혈 켐페인 진행을 위한 다양한 프로그램을 구성하고
+                  <br />있습니다. 헌혈에 대한 궁금증을 해결하고, 다양한
+                  프로그램으로 즐거운 경험을 나눌 수 있길 바랍니다.
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/img_card-4.png" alt="" />
+              <div>
+                <p class="color-w">헌혈 공식 앱 안내</p>
+                <span class="color-w"
+                  >헌혈의 중요성을 알리고, 더 많은 정보를 제공하기 위해
+                  <br />헌혈 공식 앱을 소개하고 있습니다. 앱으로 더 많은
+                  분들께서 참여해주시고, 관심 가져주시길 바랍니다.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination-1"></div>
+        </div>
+      </section>
+      <section class="slide slide-2 con-min-width">
+        <div class="swiper mySwiper2 Swiper-color">
+          <div class="swiper-wrapper">
+            <img
+              class="swiper-slide"
+              src="./image/img_introduce-gd-1.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide"
+              src="./image/img_introduce-gd-2.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide"
+              src="./image/img_introduce-gd-3.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide"
+              src="./image/img_introduce-gd-4.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-pagination-2"></div>
+        </div>
+        <div
+          class="text-box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+        >
+          <h1>굿즈</h1>
+          <span>
+            Do&Or는 캠페인의 의미를 담아<br />일상에서 사용 가능한 굿즈를<br />제작하고
+            있습니다.
+          </span>
+          <p
+            class="text-box"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1800"
+          >
+            * 캠페인 굿즈 판매 모금액은 미래인재 양성 및 취약계층 지원을 위한
+            헌혈기부권사업비로 사용됩니다.
+          </p>
+        </div>
+      </section>
+      <section class="footer con-min-width">
+        <div class="con">
+          <div>
+            <img src="./image/img_footer_logo.png" alt="이미지" />
+            <button class="btn_notification">
+              <img src="./image/ico_noti.png" alt="" />
+              <span class="color-w">캠페인 알림 신청</span>
+            </button>
+            <div></div>
+            <ul>
+              <li>
+                <a href="/Introduce.html" class="menu-link">캠페인 소개</a>
+              </li>
+              <li>
+                <a href="/reservation.html" class="menu-link">헌혈 예약</a>
+              </li>
+              <li><a href="/state.html" class="menu-link">헌혈 현황</a></li>
+              <li><a href="/goods.html" class="menu-link">캠페인 굿즈</a></li>
+            </ul>
+          </div>
+          <div>
+            <span>서울특별시 OO구 12355</span>
+            <span>|</span>
+            <span>캠페인 문의</span>
+            <span>1234-567</span>
+          </div>
+          <div>
+            <span>Copyright © Do&Or. All Rights Reserved.</span>
+            <img
+              src="./image/img_footer_logo-2.png"
+              alt=""
+              OnClick="location.href ='https://bloodinfo.net/knrcbs/main.do';"
+            />
+            <img
+              src="./image/img_footer_logo-3.png"
+              alt=""
+              OnClick="location.href ='https://www.redcross.or.kr/main/main.do';"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="Bg">
+        <div class="Popup">
+          <div class="PopupArea">
+            <img class="clear" src="./image/ico_clear.png" alt="" />
+            <div></div>
+            <form
+              target="_blank"
+              action="https://formspree.io/f/mnnnogvk"
+              method="POST"
+              onsubmit="sendEmailForm(this);"
+            >
+              <div>
+                알림을 받을 이메일을 입력해주세요.
+                <br />
+                <div>
+                  *캠페인 시작 시, 입력하신 이메일로 알림을 보내드립니다.
+                </div>
+                <input
+                  type="email"
+                  name="_replyto"
+                  placeholder="이메일을 입력해주세요."
+                  required
+                />
+              </div>
+              <div>
+                <button name="submit1" type="sumbit">신청</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="Mobile">
+      <header class="Topbar">
+        <div>
+          <img
+            class="logo"
+            src="./image/logo.png"
+            alt=""
+            OnClick="location.href ='MainPage.html';"
+          />
+        </div>
+        <ul>
+          <li>
+            <img src="./image/ico_arrow.png" alt="" />
+            <ul>
+              <li><a href="/Introduce.html">캠페인 소개</a></li>
+              <li><a href="/reservation.html">헌혈 예약</a></li>
+              <li><a href="/state.html">헌혈 현황</a></li>
+              <li><a href="/goods.html">캠페인 굿즈</a></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+      <section class="intro">
+        <h1>Do&Or은<br />헌혈의 중요성을 알리기 위해 시작했습니다.</h1>
+      </section>
+      <section class="intro-bg">
+        <img src="./image/img_introduce-bg-s.png" alt="이미지" />
+        <button class="btn_notification-m flex-ai-c">
+          <img src="./image/ico_noti.png" alt="" />
+          <span>캠페인 알림 신청</span>
+        </button>
+      </section>
+      <section class="intro-campaign">
+        <div class="text-box">
+          <img src="./image/introduce-logo.png" alt="" />
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+          >
+            <span>
+              헌혈(Blood Dontaion)의 기증자(Donor)를 뜻하는<br />
+              단어에 “Do&Or”이라는 새로운 의미를 담았습니다.
+            </span>
+            <span>
+              헌혈의 중요성을 알리는 캠페인 확산에 보탬이 되어<br />
+              달라는 사회공헌적 의미를 담고 있습니다. 직접 헌혈에<br />
+              참여하시는 분 뿐만 아니라 헌혈의 중요성을 함께 알리는<br />
+              분들과 다양한 방식으로 사회에 기여할 수 있는 방법을<br />고민하고
+              있습니다.
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="intro-bd">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="3000"
+        >
+          <img src="./image/img_bd-1.png" alt="" />
+          <span class="bd-text-1"
+            >혈액은<br />인공적인 물질로<br />대체할 수 없어요.</span
+          >
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="3000"
+        >
+          <img src="./image/img_bd-2.png" alt="" />
+          <span class="bd-text-2"
+            >혈액은<br />장기보관이 어려워<br />적정 보유량을<br />확보해야
+            해요.</span
+          >
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="3000"
+        >
+          <img src="./image/img_bd-3.png" alt="" />
+          <span class="bd-text-3"
+            >혈액은<br />윤리적 문제로<br />상업적 유통이 불가해요.</span
+          >
+        </div>
+      </section>
+      <section class="start">
+        <div class="box">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+          >
+            <h1
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1800"
+            >
+              캠페인 개최 현황
+            </h1>
+            <div>
+              <p>2025년</p>
+              <div class="box">
+                <div class="point"></div>
+                <div class="line"></div>
+              </div>
+              <span>제1회 Do&Or 캠페인</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide slide-1">
+        <div
+          class="text-box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+        >
+          <h1>활동</h1>
+          <span>
+            캠페인 준비부터 캠페인 종료까지<br />다양한 프로그램으로<br />생명을
+            살리는 일에<br />기여하고자 노력하고 있습니다.
+          </span>
+        </div>
+        <div class="swiper mySwiper-m">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./image/img_card-1.png" alt="" />
+              <div>
+                <p class="color-w">헌혈 버스 운영</p>
+                <span class="color-w">
+                  최신 장비와 전문 의료진과 함께하는<br />이동식 헌혈 공간으로,
+                  다양한 장소에서<br />보다 쉽게 헌혈에 참여할 수 있습니다.
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/img_card-2.png" alt="" />
+              <div>
+                <p class="color-w">캠페인 지원자 모집</p>
+                <span class="color-w">
+                  캠페인 진행을 위한 지원자를 모집하고 있습니다. 참여를
+                  원하시는분께서는 캠페인 문의처로 연락 주시면 안내해 드리고
+                  있습니다. 많은 참여 부탁드립니다.
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/img_card-3.png" alt="" />
+              <div>
+                <p class="color-w">부스별 프로그램 구성</p>
+                <span class="color-w">
+                  헌혈 켐페인 진행을 위한 다양한 프로그램을 구성하고 있습니다.
+                  헌혈에 대한 궁금증을 해결하고, 다양한 프로그램으로 즐거운
+                  경험을 나눌 수 있길 바랍니다.
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/img_card-4.png" alt="" />
+              <div>
+                <p class="color-w">헌혈 공식 앱 안내</p>
+                <span class="color-w"
+                  >헌혈의 중요성을 알리고, 더 많은 정보를 제공하기 위해 헌혈
+                  공식 앱을 소개하고 있습니다. 앱으로 더 많은 분들께서
+                  참여해주시고, 관심 가져주시길 바랍니다.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination-3"></div>
+        </div>
+      </section>
+      <section class="slide slide-2">
+        <div
+          class="text-box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+        >
+          <h1>굿즈</h1>
+          <span>
+            Do&Or는 캠페인의 의미를 담아<br />일상에서 사용 가능한 굿즈를<br />제작하고
+            있습니다.
+          </span>
+          <p
+            class="text-box"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1800"
+          >
+            * 캠페인 굿즈 판매 모금액은 미래인재 양성 및 취약계층 지원을 위한
+            헌혈기부권사업비로 사용됩니다.
+          </p>
+        </div>
+        <div class="swiper mySwiper-m-2 Swiper-color">
+          <div class="swiper-wrapper">
+            <img
+              class="swiper-slide"
+              src="./image/img_introduce-gd-1.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide"
+              src="./image/img_introduce-gd-2.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide"
+              src="./image/img_introduce-gd-3.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide"
+              src="./image/img_introduce-gd-4.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-pagination-4"></div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="con">
+          <div>
+            <img src="./image/img_footer_logo.png" alt="이미지" />
+            <button class="btn_notification-m">
+              <img src="./image/ico_noti.png" alt="" />
+              <span class="color-w">캠페인 알림 신청</span>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li><a href="/Introduce.html">캠페인 소개</a></li>
+              <li><a href="/reservation.html">헌혈 예약</a></li>
+              <li><a href="/state.html">헌혈 현황</a></li>
+              <li><a href="/goods.html">캠페인 굿즈</a></li>
+            </ul>
+          </div>
+          <div>
+            <img
+              src="./image/img_footer_logo-2.png"
+              alt=""
+              OnClick="location.href ='https://bloodinfo.net/knrcbs/main.do';"
+            />
+            <img
+              src="./image/img_footer_logo-3.png"
+              alt=""
+              OnClick="location.href ='https://www.redcross.or.kr/main/main.do';"
+            />
+          </div>
+          <div>
+            <span>서울특별시 OO구 12355</span>
+            <span>|</span>
+            <span>캠페인 문의</span>
+            <span>1234-567</span>
+          </div>
+          <div>
+            <span>Copyright © Do&Or. All Rights Reserved.</span>
+          </div>
+        </div>
+      </section>
+      <section class="Bg-m">
+        <div class="Popup">
+          <img class="clear-m" src="./image/ico_clear.png" alt="" />
+          <div class="PopupArea">
+            <div></div>
+            <form
+              target="_blank"
+              action="https://formspree.io/f/mnnnogvk"
+              method="POST"
+              onsubmit="sendEmailForm(this);"
+            >
+              <div>
+                알림을 받을 이메일을 입력해주세요.
+                <br />
+                <div>
+                  *캠페인 시작 시, 입력하신 이메일로 알림을 보내드립니다.
+                </div>
+                <input
+                  type="email"
+                  name="_replyto"
+                  placeholder="이메일을 입력해주세요."
+                  required
+                />
+              </div>
+              <div>
+                <button name="submit1" type="sumbit">신청</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    //AOS
+    AOS.init();
+
+    //PC Swiper
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination-1",
+        clickable: true,
+      },
+    });
+
+    var swiper = new Swiper(".mySwiper2", {
+      direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination-2",
+        clickable: true,
+      },
+    });
+
+    //Mobile Swiper
+    var swiper = new Swiper(".mySwiper-m", {
+      direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination-3",
+        clickable: true,
+      },
+    });
+
+    var swiper = new Swiper(".mySwiper-m-2", {
+      direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination-4",
+        clickable: true,
+      },
+    });
+
+    //캠페인 알림 신청 팝업
+    function Popup__show() {
+      $(".Bg").addClass("active");
+      $("body").css("overflow", "hidden");
+    }
+
+    function Popup__hide() {
+      $(".Bg").removeClass("active");
+      $("body").css("overflow", "visible");
+    }
+
+    function Popup__init() {
+      $(".btn_notification").click(function () {
+        Popup__show();
+      });
+
+      $(".clear").click(function () {
+        Popup__hide();
+      });
+    }
+
+    $(document).ready(function () {
+      Popup__init(); // 문서가 준비되면 초기화
+    });
+
+    //Mobile 캠페인 알림 신청 팝업
+    function Popup__show_m() {
+      $(".Bg-m").addClass("active");
+      $("body").css("overflow", "hidden");
+    }
+
+    function Popup__hide_m() {
+      $(".Bg-m").removeClass("active");
+      $("body").css("overflow", "visible");
+    }
+
+    function Popup__init_m() {
+      $(".btn_notification-m").click(function () {
+        Popup__show_m();
+      });
+
+      $(".clear-m").click(function () {
+        Popup__hide_m();
+      });
+    }
+
+    $(document).ready(function () {
+      Popup__init_m(); // 문서가 준비되면 초기화
+    });
+
+    //Mobile TopBar
+    function TopBar__init() {
+      $(".Mobile .Topbar > ul img").click(function (e) {
+        e.stopPropagation(); // 이벤트 버블링 방지
+        $(".Mobile .Topbar > ul > li > ul").addClass("active");
+      });
+
+      $(document).click(function () {
+        $(".Mobile .Topbar > ul > li > ul").removeClass("active");
+      });
+
+      $(".Mobile .Topbar > ul > li > ul").click(function (e) {
+        e.stopPropagation(); // 드롭다운 내부 클릭 시 닫힘 방지
+      });
+    }
+
+    TopBar__init();
+  </script>
+</html>
