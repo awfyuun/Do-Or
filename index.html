@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index-style.css" />
+    <link rel="stylesheet" href="Popup-style.css" />
+
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- lodash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+    <!-- Swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="PC">
+      <header class="Topbar con_min_width">
+        <div>
+          <img
+            class="logo"
+            src="./image/logo.png"
+            alt=""
+            OnClick="location.href ='MainPage.html';"
+          />
+        </div>
+        <div></div>
+        <div>
+          <ul>
+            <li><a href="/Introduce.html">캠페인 소개</a></li>
+            <li><a href="/reservation.html">헌혈 예약</a></li>
+            <li><a href="/state.html">헌혈 현황</a></li>
+            <li><a href="/goods.html">캠페인 굿즈</a></li>
+          </ul>
+        </div>
+      </header>
+      <section class="mainImage con_min_width">
+        <img class="bg" src="./image/MainImage.png" alt="" />
+        <img class="MainImage-logo" src="./image/MainImage_logo.png" alt="" />
+        <span
+          >헌혈(Blood Dontaion)의 기증자(Donor)<br />를 뜻하는 단어에 새로운
+          의미를 담은 캠페인<br />을 시작합니다. 헌혈의 중요성을 알리는<br />Do&Or와
+          소중한 추억을 쌓아보세요.</span
+        >
+      </section>
+      <section class="CampainGuide con_min_width">
+        <div
+          class="text-box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+        >
+          <div>
+            <h1>캠페인 안내</h1>
+            <span>
+              헌혈 캠페인에 여러분을 초대합니다! 헌혈은 생명을 구하는 소중한
+              활동으로, 작은 나눔이 큰 변화를 가져옵니다.
+              <br />Do&Or에서는 헌혈의 중요성을 널리 알리고, 방문해주시는
+              분들께서 즐겁고 의미 있는 시간을 <br />보낼 수 있도록 다양한
+              프로그램을 준비했습니다.
+            </span>
+          </div>
+          <div>
+            <ul>
+              <li class="index">
+                <img src="./image/ico_date.png" alt="" />
+                <p>진행 일자</p>
+              </li>
+              <li><span>2025년 6월 1일부터 2025년 6월 30일까지</span></li>
+            </ul>
+            <ul>
+              <li class="index">
+                <img src="./image/ico_position.png" alt="" />
+                <p>진행 장소</p>
+              </li>
+              <li><span>서울특별시 OO구 12355</span></li>
+            </ul>
+            <ul>
+              <li class="index">
+                <img src="./image/ico_booth.png" alt="" />
+                <p>위치 안내</p>
+              </li>
+              <li>
+                <span
+                  >아래 번호를 클릭하시면, 해당 부스를 확인하실 수
+                  있습니다.</span
+                >
+              </li>
+            </ul>
+            <div class="button-box">
+              <button data-index="1">1</button>
+              <button data-index="2">2</button>
+              <button data-index="3">3</button>
+              <button data-index="4">4</button>
+              <button data-index="5">5</button>
+              <button data-index="6">6</button>
+              <button data-index="7">7</button>
+              <button data-index="8">8</button>
+            </div>
+            <ul class="description">
+              <li>
+                <div>
+                  <img src="./image/ico_num_1.png" alt="" />
+                  <p>혈액형 캐릭터 부스</p>
+                </div>
+                <span
+                  >여러분의 혈액형에 맞는 귀여운 캐릭터를 만나보세요! 자신만의
+                  혈액형 캐릭터와 함께 특별한 순간을 사진으로 남길 수
+                  있습니다.</span
+                >
+              </li>
+              <li>
+                <div>
+                  <img src="./image/ico_num_2.png" alt="" />
+                  <p>헌혈 버스</p>
+                </div>
+                <span
+                  >최신 장비와 전문 의료진과 함께하는 이동식 헌혈
+                  공간입니다.</span
+                >
+              </li>
+              <li>
+                <div>
+                  <img src="./image/ico_num_3.png" alt="" />
+                  <p>헌혈 퀴즈 부스</p>
+                </div>
+                <span>
+                  헌혈에 관한 다양한 퀴즈를 풀고, 재미있게 헌혈에 대해
+                  배워보세요!</span
+                >
+              </li>
+              <li>
+                <div>
+                  <img src="./image/ico_num_4.png" alt="" />
+                  <p>레드 커넥트 홍보</p>
+                </div>
+                <span
+                  >헌혈 공식 앱을 소개하는 레드 커넥트 부스! 헌혈 관련 다양한
+                  정보를 확인할 수 있는 방법을 알려드립니다.</span
+                >
+              </li>
+              <li>
+                <div>
+                  <img src="./image/ico_num_5.png" alt="" />
+                  <p>헌혈 인증 부스</p>
+                </div>
+                <span
+                  >헌혈에 참여한 분들에게 특별한 헌혈 굿즈를 선물로
+                  드립니다.</span
+                >
+              </li>
+              <li>
+                <div>
+                  <img src="./image/ico_num_6.png" alt="" />
+                  <p>헌혈 굿즈 부스</p>
+                </div>
+                <span
+                  >헌혈에 참여한 분들에게 특별한 헌혈 굿즈를 선물로
+                  드립니다.</span
+                >
+              </li>
+              <li>
+                <div>
+                  <img src="./image/ico_num_7.png" alt="" />
+                  <p>기념 포토 부스</p>
+                </div>
+                <span
+                  >친구, 가족과 함께 즐길 수 있는 네 컷 사진 촬영 프레임! 헌혈의
+                  의미를 담은 멋진 사진을 찍어 소중한 추억을 만들어
+                  보세요.</span
+                >
+              </li>
+              <li>
+                <div>
+                  <img src="./image/ico_num_8.png" alt="" />
+                  <p>방문 안내 부스</p>
+                </div>
+                <span
+                  >현장 방문 시, 캠페인 관련 및 기타 문의 사항은 방문 안내
+                  부스를 찾아주세요.</span
+                >
+              </li>
+            </ul>
+            <div class="map-description">
+              <div class="description-title">
+                <img src="./image/ico_num_8.png" alt="" />
+                <p>방문 안내 부스</p>
+              </div>
+              <span
+                >현장 방문 시, 캠페인 관련 및 기타 문의 사항은 방문 안내 부스를
+                찾아주세요.</span
+              >
+            </div>
+          </div>
+          <div>
+            <div class="text-1">
+              <p>*</p>
+              <span>기타 문의사항은 아래 연락처로 문의 부탁드립니다.</span>
+            </div>
+            <div class="text-2">
+              <p>캠페인 문의:</p>
+              <p>1234-567</p>
+            </div>
+          </div>
+        </div>
+        <div class="map" data-aos="zoom-in-down" data-aos-duration="1000">
+          <img src="./image/Map.png" alt="" />
+          <img src="image/img_booth-1.png" alt="" />
+          <img src="image/img_booth-2.png" alt="" />
+          <img src="image/img_booth-3.png" alt="" />
+          <img src="image/img_booth-4.png" alt="" />
+          <img src="image/img_booth-5.png" alt="" />
+          <img src="image/img_booth-6.png" alt="" />
+          <img src="image/img_booth-7.png" alt="" />
+          <img src="image/img_booth-8.png" alt="" />
+        </div>
+      </section>
+      <section class="State con_min_width">
+        <nav class="MenuTab-box">
+          <div onclick="changeTab(1)">
+            <a href="#" class="MenuTab-1 active">적혈구제제 혈액보유량</a>
+          </div>
+          <div onclick="changeTab(2)">
+            <a href="#" class="MenuTab-2">혈소판제제 혈액보유량</a>
+          </div>
+        </nav>
+        <div class="content">
+          <nav class="content-box content-box-1 flex-ai-c active">
+            <div class="State-box-1">
+              <div class="flex-ai-c"><span>캠페인 시작일부터</span></div>
+              <div class="flex-ai-c">
+                <span class="date dark">2025년 3월 7일</span>
+                <p>까지</p>
+              </div>
+              <div class="flex-ai-c">
+                <span class="blood-state red">5.2일분</span>
+                <p>의 혈액이 모였어요!</p>
+              </div>
+              <div></div>
+              <div class="flex-ai-c">
+                <p>참여인원</p>
+                <span>1,080</span>
+              </div>
+              <div class="flex-ai-c">
+                <img src="./image/ico_caption.png" alt="" />
+                <p>매일 오전 09:00 집계됩니다.</p>
+              </div>
+            </div>
+            <div class="State-box-2">
+              <div class="blood-box">
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-1">3.2일</span>
+                </div>
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-2">4.4일</span>
+                </div>
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-3">5.3일</span>
+                </div>
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-4">5.1일</span>
+                </div>
+              </div>
+              <div class="blood dark">
+                <p>A형</p>
+                <p>B형</p>
+                <p>O형</p>
+                <p>AB형</p>
+              </div>
+            </div>
+          </nav>
+          <nav class="content-box content-box-2 flex-ai-c">
+            <div class="State-box-1">
+              <div class="flex-ai-c"><span>캠페인 시작일부터</span></div>
+              <div class="flex-ai-c">
+                <span class="date dark">2025년 3월 7일</span>
+                <p>까지</p>
+              </div>
+              <div class="flex-ai-c">
+                <span class="blood-state red">3.5일분</span>
+                <p>의 혈액이 모였어요!</p>
+              </div>
+              <div></div>
+              <div class="flex-ai-c">
+                <p>참여인원</p>
+                <span>1,080</span>
+              </div>
+              <div class="flex-ai-c">
+                <img src="./image/ico_caption.png" alt="" />
+                <p>매일 오전 09:00 집계됩니다.</p>
+              </div>
+            </div>
+            <div class="State-box-2">
+              <div class="blood-box">
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-1">3일</span>
+                </div>
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-2">3.5일</span>
+                </div>
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-3">4일</span>
+                </div>
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-4">3.5일</span>
+                </div>
+              </div>
+              <div class="blood dark">
+                <p>A형</p>
+                <p>B형</p>
+                <p>O형</p>
+                <p>AB형</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="Reservation con_min_width">
+        <div class="flex-ai-c">
+          <span>헌혈의 종류를 선택할 수 있어요!</span>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide content-box flex-ai-c">
+              <div class="img"><img src="./image/img-blood.png" alt="" /></div>
+              <div class="text-box">
+                <h1>혈액의 모든 성분을 채혈해요!</h1>
+                <span>
+                  전혈헌혈은 320mL 또는 420mL의 혈액을 채혈합니다.
+                  <br />채혈된 혈액은 급성출혈 및 수술시 출혈로 인해 혈액량
+                  보충이 요구될 때 사용됩니다.
+                </span>
+                <p class="red flex-ai-c">
+                  *전혈헌혈은 헌혈일로부터 8주 후부터 헌혈이 가능합니다.
+                </p>
+                <p class="red flex-ai-c">*약 15분 정도 소요 됩니다.</p>
+                <div OnClick="location.href ='reservation.html';">
+                  <p>헌혈예약하기</p>
+                  <img src="./image/ico_more.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <nav class="content-box content-box-2 flex-ai-c">
+                <div class="img">
+                  <img src="./image/img_blood-2.png" alt="" />
+                </div>
+                <div class="text-box">
+                  <h1>혈액의 일부 성분만 채혈해요.</h1>
+                  <span>
+                    성분헌혈은 헌혈자의 일부 성분(혈소판, 혈장, 혈소판혈장)을
+                    채혈합니다.
+                    <br />채혈된 혈액은 급성출혈 및 수술시 출혈로 인해 혈액량
+                    보충이 요구될 때 사용됩니다.
+                  </span>
+                  <p class="red flex-ai-c">
+                    *성분헌혈은 헌혈일로부터 2주 후부터 헌혈이 가능합니다.
+                  </p>
+                  <p class="red flex-ai-c">
+                    *혈액성분 별 채혈량은 상이하며, 40분 ~ 90분 정도 소요
+                    됩니다.
+                  </p>
+                  <div OnClick="location.href ='reservation.html';">
+                    <p>헌혈예약하기</p>
+                    <img src="./image/ico_more.png" alt="" />
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div>
+            <img class="swiper-button-next" src="./image/ico_next.png" alt="" />
+          </div>
+          <div>
+            <img
+              class="swiper-button-prev"
+              src="./image/ico_previous.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section id="redConnect" class="RedConnect con_min_width">
+        <div class="con flex-ai-c">
+          <div class="introduce-box">
+            <img src="./image/logo-2.png" alt="" />
+            <h1>
+              레드 커넥트를
+              <br />소개합니다.
+            </h1>
+            <span>
+              헌혈 공식 APP 레드 커넥트를 설치하고, 생명을 살리는 소중한 일에
+              동참
+              <br />하세요! 레드커넥트로 언제 어디서나 헌혈을 쉽게 예약하고,
+              기록을 관리 <br />할 수 있습니다. 또한 실시간 헌혈 현황을
+              확인하고, 헌혈 후, 혈액 전달 <br />과정을 레드커넥트에서 확인할 수
+              있습니다. 다양한 헌혈 정보를 APP으 <br />로 확인하고, 헌혈 문화
+              확산에 기여해주세요!
+            </span>
+            <div class="shop-button">
+              <div
+                class="shop flex-ai-c"
+                OnClick="location.href ='https://play.google.com/store/apps/details?id=com.sk.redconnect&hl=ko&pli=1';"
+              >
+                <img src="./image/img_google-play.png" alt="" />
+                <p>Google Play</p>
+                <p>에서 확인하기</p>
+                <img src="./image/ico_arrow_forward.png" alt="" />
+              </div>
+              <div
+                class="shop flex-ai-c"
+                OnClick="location.href ='https://apps.apple.com/kr/app/%EB%A0%88%EB%93%9C%EC%BB%A4%EB%84%A5%ED%8A%B8-300%EB%A7%8C-%ED%97%8C%ED%98%88%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B3%B5%EC%8B%9D-%ED%97%8C%ED%98%88-%EC%95%B1/id1481548384';"
+              >
+                <img src="./image/img_app-store.png" alt="" />
+                <p>App Store</p>
+                <p>에서 확인하기</p>
+                <img src="./image/ico_arrow_forward.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="screen"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+          >
+            <img src="./image/img_screen.png"" alt="">
+          </div>
+          <div
+            class="video"
+            OnClick="location.href ='https://www.youtube.com/watch?v=rpTsmudHFaA';"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="3000"
+          >
+            <div><img src="./image/ico_video.png" alt="" /></div>
+            <div><img src="./image/img_mobileApp.png" alt="" /></div>
+            <div>
+              <span>더욱 쉽고<br />편리한 헌혈을 위한</span>
+              <p>공식 헌혈 APP 레드커넥트</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Goods con_min_width">
+        <div class="bg">
+          <img src="./image/logo.png" alt="" />
+          <span>
+            헌혈의 중요성을 알리는 Do&Or 캠페인의 의미를 담아 제작된
+            <br />캠페인 굿즈입니다. T-SHIRT, ECOBAG, DIARY, MUGCUP <br />등
+            일상에서 실용적 사용이 가능한 품목을 만나보세요! <br />캠페인 굿즈
+            판매 모금액은 미래인재 양성 및 취약계층 지원을 <br />위한
+            헌혈기부권사업비로 사용됩니다.
+          </span>
+          <div>
+            <img src="./image/ico_check-2.png" alt="" />
+            <span>
+              Do&Or 캠페인 부스에 방문하셔서 헌혈해주시는 참여자분들께는 감사의
+              <br />마음을 담아 T-SHIRT, ECOBAG, DIARY, MUGCUP 중 1가지를 전달해
+              <br />드리고 있습니다.
+            </span>
+          </div>
+          <button OnClick="location.href ='goods.html';">
+            <span>캠페인 굿즈 구매하기</span>
+            <img src="./image/ico_more.png" alt="" />
+          </button>
+        </div>
+        <div class="img-box">
+          <div>
+            <span>Mugcup</span>
+            <div class="img_box">
+              <img src="./image/product_mugcup.png" alt="" />
+            </div>
+            <span>Diary</span>
+            <div class="img_box">
+              <img src="./image/product_diary.png" alt="" />
+            </div>
+          </div>
+          <div>
+            <span>Ecobag</span>
+            <div class="img_box">
+              <img src="./image/product_ecobag.png" alt="" />
+            </div>
+            <span>T-shirt</span>
+            <div class="img_box">
+              <img src="./image/product_t-shirt.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer con-min-width">
+        <div class="con">
+          <div>
+            <img src="./image/img_footer_logo.png" alt="이미지" />
+            <button class="flex-ai-c">
+              <img src="./image/ico_noti.png" alt="" />
+              <span class="color-w btn_notification">캠페인 알림 신청</span>
+            </button>
+            <div></div>
+            <ul>
+              <li><a href="/Introduce.html">캠페인 소개</a></li>
+              <li><a href="/reservation.html">헌혈 예약</a></li>
+              <li><a href="/state.html">헌혈 현황</a></li>
+              <li><a href="/goods.html">캠페인 굿즈</a></li>
+            </ul>
+          </div>
+          <div>
+            <span>서울특별시 OO구 12355</span>
+            <span>|</span>
+            <span>캠페인 문의</span>
+            <span>1234-567</span>
+          </div>
+          <div>
+            <span>Copyright © Do&Or. All Rights Reserved.</span>
+            <img
+              src="./image/img_footer_logo-2.png"
+              alt=""
+              OnClick="location.href ='https://bloodinfo.net/knrcbs/main.do';"
+            />
+            <img
+              src="./image/img_footer_logo-3.png"
+              alt=""
+              OnClick="location.href ='https://www.redcross.or.kr/main/main.do';"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="Bg">
+        <div class="Popup">
+          <div class="PopupArea">
+            <img class="clear" src="./image/ico_clear.png" alt="" />
+            <div></div>
+            <form
+              target="_blank"
+              action="https://formspree.io/f/mnnnogvk"
+              method="POST"
+              onsubmit="sendEmailForm(this);"
+            >
+              <div>
+                알림을 받을 이메일을 입력해주세요.
+                <br />
+                <div>
+                  *캠페인 시작 시, 입력하신 이메일로 알림을 보내드립니다.
+                </div>
+                <input
+                  type="email"
+                  name="_replyto"
+                  placeholder="이메일을 입력해주세요."
+                  required
+                />
+              </div>
+              <div>
+                <button name="submit1" type="sumbit">신청</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="Mobile">
+      <header class="Topbar">
+        <div>
+          <img
+            class="logo"
+            src="./image/logo.png"
+            alt=""
+            OnClick="location.href ='MainPage.html';"
+          />
+        </div>
+        <ul>
+          <li>
+            <img src="./image/ico_arrow.png" alt="" />
+            <ul>
+              <li><a href="/Introduce.html">캠페인 소개</a></li>
+              <li><a href="/reservation.html">헌혈 예약</a></li>
+              <li><a href="/state.html">헌혈 현황</a></li>
+              <li><a href="/goods.html">캠페인 굿즈</a></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+      <section class="mainImage">
+        <img class="bg" src="./image/MainImage-s.png" alt="" />
+        <img class="MainImage-logo" src="./image/MainImage_logo.png" alt="" />
+      </section>
+      <section class="Intro">
+        <div>
+          <span>
+            헌혈(Blood Dontaion)의 기증자(Donor)<br />를 뜻하는 단어에 새로운
+            의미를 담은 캠페인<br />을 시작합니다. 헌혈의 중요성을 알리는<br />Do&Or와
+            소중한 추억을 쌓아보세요.
+          </span>
+        </div>
+      </section>
+      <section class="CampainGuide">
+        <div class="con">
+          <div
+            class="text-box"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+          >
+            <div>
+              <h1>캠페인 안내</h1>
+              <span>
+                헌혈 캠페인에 여러분을 초대합니다!
+                <br />헌혈은 생명을 구하는 소중한 활동으로, 작은 나눔이 <br />큰
+                변화를 가져옵니다. Do&Or에서는 헌혈의 중요성을 <br />널리
+                알리고, 방문해주시는 분들께서 즐겁고 의미 있는 <br />시간을 보낼
+                수 있도록 다양한 프로그램을 준비했습니다.
+              </span>
+            </div>
+            <div>
+              <ul>
+                <li class="index">
+                  <img src="./image/ico_date.png" alt="" />
+                  <p>진행 일자</p>
+                </li>
+                <li><span>2025년 6월 1일부터 2025년 6월 30일까지</span></li>
+              </ul>
+              <ul>
+                <li class="index">
+                  <img src="./image/ico_position.png" alt="" />
+                  <p>진행 장소</p>
+                </li>
+                <li><span>서울특별시 OO구 12355</span></li>
+              </ul>
+              <ul>
+                <li class="index">
+                  <img src="./image/ico_booth.png" alt="" />
+                  <p>위치 안내</p>
+                </li>
+                <li>
+                  <span
+                    >아래 번호를 클릭하시면, 해당 부스를 확인하실 수
+                    있습니다.</span
+                  >
+                </li>
+              </ul>
+              <div class="button-box">
+                <div>
+                  <button data-index="1">1</button>
+                  <button data-index="2">2</button>
+                  <button data-index="3">3</button>
+                  <button data-index="4">4</button>
+                </div>
+                <div>
+                  <button data-index="5">5</button>
+                  <button data-index="6">6</button>
+                  <button data-index="7">7</button>
+                  <button data-index="8">8</button>
+                </div>
+              </div>
+              <ul class="description">
+                <li>
+                  <div>
+                    <img src="./image/ico_num_1.png" alt="" />
+                    <p>혈액형 캐릭터 부스</p>
+                  </div>
+                  <span
+                    >여러분의 혈액형에 맞는 귀여운 캐릭터를 만나보세요! 자신만의
+                    혈액형<br />
+                    캐릭터와 함께 특별한 순간을 사진으로 남길 수 있습니다.</span
+                  >
+                </li>
+                <li>
+                  <div>
+                    <img src="./image/ico_num_2.png" alt="" />
+                    <p>헌혈 버스</p>
+                  </div>
+                  <span
+                    >최신 장비와 전문 의료진과 함께하는 이동식 헌혈
+                    공간입니다.</span
+                  >
+                </li>
+                <li>
+                  <div>
+                    <img src="./image/ico_num_3.png" alt="" />
+                    <p>헌혈 퀴즈 부스</p>
+                  </div>
+                  <span>
+                    헌혈에 관한 다양한 퀴즈를 풀고, 재미있게 헌혈에 대해
+                    배워보세요!</span
+                  >
+                </li>
+                <li>
+                  <div>
+                    <img src="./image/ico_num_4.png" alt="" />
+                    <p>레드 커넥트 홍보</p>
+                  </div>
+                  <span
+                    >헌혈 공식 앱을 소개하는 레드 커넥트 부스!<br />헌혈 관련
+                    다양한 정보를 확인할 수 있는 방법을 알려드립니다.</span
+                  >
+                </li>
+                <li>
+                  <div>
+                    <img src="./image/ico_num_5.png" alt="" />
+                    <p>헌혈 인증 부스</p>
+                  </div>
+                  <span
+                    >헌혈에 참여한 분들에게 특별한 헌혈 굿즈를 선물로
+                    드립니다.</span
+                  >
+                </li>
+                <li>
+                  <div>
+                    <img src="./image/ico_num_6.png" alt="" />
+                    <p>헌혈 굿즈 부스</p>
+                  </div>
+                  <span
+                    >헌혈에 참여한 분들에게 특별한 헌혈 굿즈를 선물로
+                    드립니다.</span
+                  >
+                </li>
+                <li>
+                  <div>
+                    <img src="./image/ico_num_7.png" alt="" />
+                    <p>기념 포토 부스</p>
+                  </div>
+                  <span
+                    >친구, 가족과 함께 즐길 수 있는 네 컷 사진 촬영 프레임!
+                    <br />헌혈의 의미를 담은 멋진 사진을 찍어 소중한 추억을
+                    만들어 보세요.</span
+                  >
+                </li>
+                <li>
+                  <div>
+                    <img src="./image/ico_num_8.png" alt="" />
+                    <p>방문 안내 부스</p>
+                  </div>
+                  <span
+                    >현장 방문 시, 캠페인 관련 및 기타 문의 사항은 방문 안내
+                    부스를 찾아주세요.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="map" data-aos="zoom-in-down" data-aos-duration="1000">
+            <img src="./image/Map.png" alt="" />
+            <img src="image/img_booth-1.png" alt="" />
+            <img src="image/img_booth-2.png" alt="" />
+            <img src="image/img_booth-3.png" alt="" />
+            <img src="image/img_booth-4.png" alt="" />
+            <img src="image/img_booth-5.png" alt="" />
+            <img src="image/img_booth-6.png" alt="" />
+            <img src="image/img_booth-7.png" alt="" />
+            <img src="image/img_booth-8.png" alt="" />
+          </div>
+          <div>
+            <div class="text-1">
+              <p>*</p>
+              <span>기타 문의사항은 아래 연락처로 문의 부탁드립니다.</span>
+            </div>
+            <div class="text-2">
+              <p>캠페인 문의:</p>
+              <p>1234-567</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="State">
+        <nav class="MenuTab-box">
+          <div onclick="changeTab(1)">
+            <a href="#" class="MenuTab-1 active">적혈구제제 혈액보유량</a>
+          </div>
+          <div onclick="changeTab(2)">
+            <a href="#" class="MenuTab-2">혈소판제제 혈액보유량</a>
+          </div>
+        </nav>
+        <div class="content">
+          <nav class="content-box content-box-1 flex-ai-c active">
+            <div class="State-box-1">
+              <div class="flex-ai-c"><span>캠페인 시작일부터</span></div>
+              <div class="flex-ai-c">
+                <span class="date dark">2025년 3월 7일</span>
+                <p>까지</p>
+              </div>
+              <div class="flex-ai-c">
+                <span class="blood-state red">5.2일분</span>
+                <p>의 혈액이 모였어요!</p>
+              </div>
+              <div></div>
+              <div class="flex-ai-c">
+                <p>참여인원</p>
+                <span>1,080</span>
+              </div>
+              <div class="flex-ai-c">
+                <img src="./image/ico_caption.png" alt="" />
+                <p>매일 오전 09:00 집계됩니다.</p>
+              </div>
+            </div>
+            <div class="State-box-2">
+              <div class="blood-box">
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-1">3.2일</span>
+                </div>
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-2">4.4일</span>
+                </div>
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-3">5.3일</span>
+                </div>
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-4">5.1일</span>
+                </div>
+              </div>
+              <div class="blood dark">
+                <p>A형</p>
+                <p>B형</p>
+                <p>O형</p>
+                <p>AB형</p>
+              </div>
+            </div>
+          </nav>
+          <nav class="content-box content-box-2 flex-ai-c">
+            <div class="State-box-1">
+              <div class="flex-ai-c"><span>캠페인 시작일부터</span></div>
+              <div class="flex-ai-c">
+                <span class="date dark">2025년 3월 7일</span>
+                <p>까지</p>
+              </div>
+              <div class="flex-ai-c">
+                <span class="blood-state red">3.5일분</span>
+                <p>의 혈액이 모였어요!</p>
+              </div>
+              <div></div>
+              <div class="flex-ai-c">
+                <p>참여인원</p>
+                <span>1,080</span>
+              </div>
+              <div class="flex-ai-c">
+                <img src="./image/ico_caption.png" alt="" />
+                <p>매일 오전 09:00 집계됩니다.</p>
+              </div>
+            </div>
+            <div class="State-box-2">
+              <div class="blood-box">
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-1">3일</span>
+                </div>
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-2">3.5일</span>
+                </div>
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-3">4일</span>
+                </div>
+                <div>
+                  <div
+                    class="active-on-visible can-active-once animation"
+                  ></div>
+                  <span class="day-4">3.5일</span>
+                </div>
+              </div>
+              <div class="blood dark">
+                <p>A형</p>
+                <p>B형</p>
+                <p>O형</p>
+                <p>AB형</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="Reservation">
+        <div class="flex-ai-c">
+          <span>헌혈의 종류를 선택할 수 있어요!</span>
+        </div>
+        <div class="swiper mySwiper-m">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide content-box flex-ai-c">
+              <div class="img"><img src="./image/img-blood.png" alt="" /></div>
+              <div class="text-box">
+                <h1>혈액의 모든 성분을 채혈해요!</h1>
+                <span>
+                  전혈헌혈은 320mL 또는 420mL의 혈액을 채혈합니다. 채혈된<br />혈액은
+                  급성출혈 및 수술시 출혈로 인해 혈액량 보충이 요구될 때<br />
+                  사용됩니다.
+                </span>
+                <p class="red flex-ai-c">
+                  *전혈헌혈은 헌혈일로부터 8주 후부터 헌혈이 가능합니다.
+                </p>
+                <p class="red flex-ai-c">*약 15분 정도 소요 됩니다.</p>
+                <div OnClick="location.href ='reservation.html';">
+                  <p>헌혈예약하기</p>
+                  <img src="./image/ico_more.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <nav class="content-box content-box-2 flex-ai-c">
+                <div class="img">
+                  <img src="./image/img_blood-2.png" alt="" />
+                </div>
+                <div class="text-box">
+                  <h1>혈액의 일부 성분만 채혈해요.</h1>
+                  <span>
+                    성분헌혈은 헌혈자의 일부 성분(혈소판, 혈장, 혈소판혈장)을
+                    <br />채혈합니다.채혈된 혈액은 급성출혈 및 수술시 출혈로
+                    인해 혈액량 <br />보충이 요구될 때 사용됩니다.
+                  </span>
+                  <p class="red flex-ai-c">
+                    *성분헌혈은 헌혈일로부터 2주 후부터 헌혈이 가능합니다.
+                  </p>
+                  <p class="red flex-ai-c">
+                    *혈액성분 별 채혈량은 상이하며, 40분 ~ 90분 정도 소요
+                    됩니다.
+                  </p>
+                  <div OnClick="location.href ='reservation.html';">
+                    <p>헌혈예약하기</p>
+                    <img src="./image/ico_more.png" alt="" />
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+      <section id="redConnect" class="RedConnect">
+        <div class="con flex-ai-c">
+          <div class="introduce-box">
+            <img src="./image/logo-2.png" alt="" />
+            <h1>
+              레드 커넥트를
+              <br />소개합니다.
+            </h1>
+            <span>
+              헌혈 공식 APP 레드 커넥트를 설치하고, 생명을 살리는 소중한 일에
+              <br />동참 하세요! 레드커넥트로 언제 어디서나 헌혈을 쉽게
+              예약하고,<br />
+              기록을 관리할 수 있습니다. 또한 실시간 헌혈 현황을 확인하고, 헌혈
+              후, 혈액 전달 과정을 레드커넥트에서 확인할 수 있습니다. 다양한<br />헌혈
+              정보를 APP으로 확인하고, 헌혈 문화 확산에 기여해주세요!
+            </span>
+            <div class="shop-button">
+              <div
+                class="shop flex-ai-c"
+                OnClick="location.href ='https://play.google.com/store/apps/details?id=com.sk.redconnect&hl=ko&pli=1';"
+              >
+                <img src="./image/img_google-play.png" alt="" />
+                <p>Google Play</p>
+                <p>에서 확인하기</p>
+                <img src="./image/ico_arrow_forward.png" alt="" />
+              </div>
+              <div
+                class="shop flex-ai-c"
+                OnClick="location.href ='https://apps.apple.com/kr/app/%EB%A0%88%EB%93%9C%EC%BB%A4%EB%84%A5%ED%8A%B8-300%EB%A7%8C-%ED%97%8C%ED%98%88%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B3%B5%EC%8B%9D-%ED%97%8C%ED%98%88-%EC%95%B1/id1481548384';"
+              >
+                <img src="./image/img_app-store.png" alt="" />
+                <p>App Store</p>
+                <p>에서 확인하기</p>
+                <img src="./image/ico_arrow_forward.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="screen"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+          >
+            <img src="./image/img_screen-s.png"" alt="">
+          </div>
+          <div
+            class="video"
+            OnClick="location.href ='https://www.youtube.com/watch?v=rpTsmudHFaA';"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+          >
+            <div><img src="./image/ico_video.png" alt="" /></div>
+            <div><img src="./image/img_mobileApp.png" alt="" /></div>
+            <div>
+              <span>더욱 쉽고<br />편리한 헌혈을 위한</span>
+              <p>공식 헌혈 APP 레드커넥트</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Goods">
+        <div class="bg">
+          <img src="./image/logo.png" alt="" />
+          <span>
+            헌혈의 중요성을 알리는 Do&Or 캠페인의 의미를 담아 제작된
+            <br />캠페인 굿즈입니다. T-SHIRT, ECOBAG, DIARY, MUGCUP <br />등
+            일상에서 실용적 사용이 가능한 품목을 만나보세요! <br />캠페인 굿즈
+            판매 모금액은 미래인재 양성 및 취약계층 지원을 <br />위한
+            헌혈기부권사업비로 사용됩니다.
+          </span>
+          <div>
+            <img src="./image/ico_check-2.png" alt="" />
+            <span>
+              Do&Or 캠페인 부스에 방문하셔서 헌혈해주시는 참여자분들께는 감사의
+              <br />마음을 담아 T-SHIRT, ECOBAG, DIARY, MUGCUP 중 1가지를 전달해
+              <br />드리고 있습니다.
+            </span>
+          </div>
+          <button OnClick="location.href ='goods.html';">
+            <span>캠페인 굿즈 구매하기</span>
+            <img src="./image/ico_more.png" alt="" />
+          </button>
+        </div>
+        <div class="img-box">
+          <div>
+            <span>Mugcup</span>
+            <div class="img_box">
+              <img src="./image/img_gd-s-1.png" alt="" />
+            </div>
+            <span>Diary</span>
+            <div class="img_box">
+              <img src="./image/img_gd-s-2.png" alt="" />
+            </div>
+          </div>
+          <div>
+            <span>Ecobag</span>
+            <div class="img_box">
+              <img src="./image/img_gd-s-3.png" alt="" />
+            </div>
+            <span>T-shirt</span>
+            <div class="img_box">
+              <img src="./image/img_gd-s-4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="con">
+          <div>
+            <img src="./image/img_footer_logo.png" alt="이미지" />
+            <button class="flex-ai-c btn_notification-m">
+              <img src="./image/ico_noti.png" alt="" />
+              <span class="color-w">캠페인 알림 신청</span>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li><a href="/Introduce.html">캠페인 소개</a></li>
+              <li><a href="/reservation.html">헌혈 예약</a></li>
+              <li><a href="/state.html">헌혈 현황</a></li>
+              <li><a href="/goods.html">캠페인 굿즈</a></li>
+            </ul>
+          </div>
+          <div>
+            <img
+              src="./image/img_footer_logo-2.png"
+              alt=""
+              OnClick="location.href ='https://bloodinfo.net/knrcbs/main.do';"
+            />
+            <img
+              src="./image/img_footer_logo-3.png"
+              alt=""
+              OnClick="location.href ='https://www.redcross.or.kr/main/main.do';"
+            />
+          </div>
+          <div>
+            <span>서울특별시 OO구 12355</span>
+            <span>|</span>
+            <span>캠페인 문의</span>
+            <span>1234-567</span>
+          </div>
+          <div>
+            <span>Copyright © Do&Or. All Rights Reserved.</span>
+          </div>
+        </div>
+      </section>
+      <section class="Bg-m">
+        <div class="Popup">
+          <img class="clear-m" src="./image/ico_clear.png" alt="" />
+          <div class="PopupArea">
+            <div></div>
+            <form
+              target="_blank"
+              action="https://formspree.io/f/mnnnogvk"
+              method="POST"
+              onsubmit="sendEmailForm(this);"
+            >
+              <div>
+                알림을 받을 이메일을 입력해주세요.
+                <br />
+                <div>
+                  *캠페인 시작 시, 입력하신 이메일로 알림을 보내드립니다.
+                </div>
+                <input
+                  type="email"
+                  name="_replyto"
+                  placeholder="이메일을 입력해주세요."
+                  required
+                />
+              </div>
+              <div>
+                <button name="submit1" type="sumbit">신청</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    //AOS
+    AOS.init();
+
+    // 발견되면 활성화시키는 라이브러리
+    function ActiveOnVisible__init() {
+      $(".active-on-visible").each(function (index, node) {
+        var $node = $(node);
+
+        var onFuncName = $node.attr("data-active-on-visible-on-func-name");
+        var offFuncName = $node.attr("data-active-on-visible-off-func-name");
+
+        $node.data("data-active-on-visible-on-func-name", onFuncName);
+        $node.data("data-active-on-visible-off-func-name", offFuncName);
+      });
+
+      $(window).resize(_.debounce(ActiveOnVisible__initOffset, 500));
+      ActiveOnVisible__initOffset();
+
+      $(window).scroll(_.debounce(ActiveOnVisible__checkAndActive, 50));
+      ActiveOnVisible__checkAndActive();
+    }
+
+    function ActiveOnVisible__initOffset() {
+      var windowHeight = $(window).height();
+
+      $(".active-on-visible:not(.actived)").each(function (index, node) {
+        var $node = $(node);
+
+        var offsetTop = $node.offset().top;
+
+        var matrix = $node
+          .css("transform")
+          .replace(/[^0-9\-.,]/g, "")
+          .split(",");
+        var translateX = matrix[12] || matrix[4];
+        var translateY = matrix[13] || matrix[5];
+
+        if (translateY) {
+          offsetTop -= translateY;
+        }
+
+        $node.attr("data-active-on-visible-offsetTop", offsetTop);
+        $node.data("data-active-on-visible-offsetTop", offsetTop);
+
+        if (!$node.attr("data-active-on-visible-diff-y")) {
+          $node.attr("data-active-on-visible-diff-y", "0");
+        }
+
+        if (!$node.attr("data-active-on-visible-delay")) {
+          $node.attr("data-active-on-visible-delay", "0");
+        }
+
+        var diffY = $node.attr("data-active-on-visible-diff-y");
+        var delay = $node.attr("data-active-on-visible-delay");
+
+        if (diffY.substr(-2, 2) == "vh") {
+          diffY = parseInt(diffY);
+
+          diffY = windowHeight * (diffY / 100);
+        } else if (diffY.substr(-1, 1) == "%") {
+          diffY = parseInt(diffY);
+
+          diffY = $node.height() * (diffY / 100);
+        } else {
+          diffY = parseInt(diffY);
+        }
+
+        $node.attr("data-active-on-visible-diff-y-real", diffY);
+        $node.data("data-active-on-visible-diff-y", diffY);
+        $node.data("data-active-on-visible-delay", delay);
+      });
+
+      ActiveOnVisible__checkAndActive();
+    }
+
+    function ActiveOnVisible__checkAndActive() {
+      $(".active-on-visible:not(.actived)").each(function (index, node) {
+        var $node = $(node);
+
+        var offsetTop = $node.data("data-active-on-visible-offsetTop") * 1;
+        var diffY = parseInt($node.data("data-active-on-visible-diff-y"));
+        var delay = parseInt($node.data("data-active-on-visible-delay"));
+
+        var onFuncName = $node.data("data-active-on-visible-on-func-name");
+        var offFuncName = $node.data("data-active-on-visible-off-func-name");
+
+        var scrollTop = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        var nodeHeight = $node.height();
+
+        if (scrollTop + windowHeight + diffY > offsetTop) {
+          setTimeout(function () {
+            if ($node.hasClass("active") == false) {
+              $node.addClass("active");
+
+              if ($node.hasClass("can-active-once")) {
+                $node.addClass("actived");
+              }
+
+              if (window[onFuncName]) {
+                window[onFuncName]($node);
+              }
+            }
+          }, delay);
+        } else {
+          if ($node.hasClass("active")) {
+            $node.removeClass("active");
+
+            if (window[offFuncName]) {
+              window[offFuncName]($node);
+            }
+          }
+        }
+      });
+    }
+
+    $(function () {
+      ActiveOnVisible__init();
+    });
+
+    // swiper
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    // 버튼 컨트롤 시작
+    document.addEventListener("DOMContentLoaded", function () {
+      // 공통 처리 함수
+      function setupBoothControls(scope) {
+        const buttons = scope.querySelectorAll(".button-box button");
+        const images = scope.querySelectorAll(".map img");
+        const descriptions = scope.querySelectorAll(".description li");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", function (e) {
+            e.stopPropagation();
+
+            const index = parseInt(button.getAttribute("data-index")); // 1~8
+            const targetImage = images[index]; // images[1] ~ [8]
+            const targetDescription = descriptions[index - 1]; // descriptions[0] ~ [7]
+
+            const isActive = targetImage.classList.contains("active");
+
+            // 초기화
+            images.forEach((img) => img.classList.remove("active"));
+            descriptions.forEach((desc) => desc.classList.remove("active"));
+            buttons.forEach((btn) => btn.classList.remove("focus"));
+
+            // 토글 적용
+            if (!isActive) {
+              targetImage.classList.add("active");
+              targetDescription.classList.add("active");
+              button.classList.add("focus");
+            }
+          });
+        });
+
+        // 외부 클릭 시 비활성화
+        document.addEventListener("click", function () {
+          images.forEach((img) => img.classList.remove("active"));
+          descriptions.forEach((desc) => desc.classList.remove("active"));
+          buttons.forEach((btn) => btn.classList.remove("focus"));
+        });
+      }
+
+      // 데스크탑용
+      const desktopSection = document.querySelector("section.CampainGuide");
+      if (desktopSection) setupBoothControls(desktopSection);
+
+      // 모바일용
+      const mobileSection = document.querySelector(".Mobile");
+      if (mobileSection) setupBoothControls(mobileSection);
+    });
+
+    // 버튼 포커스 시작
+    function btn_focus_n__init() {
+      // 버튼 클릭 시 포커스 및 클래스 토글
+      $(".button-box button").click(function () {
+        let $this = $(this);
+
+        // 이미 포커스가 있으면 포커스를 제거
+        if ($this.hasClass("focus")) {
+          $this.removeClass("focus");
+          $this.blur(); // 포커스 제거
+        } else {
+          // 다른 모든 버튼에서 포커스 클래스를 제거
+          $(".button-box button").removeClass("focus").blur();
+
+          // 클릭한 버튼에 포커스 추가
+          $this.addClass("focus");
+          $this.focus(); // 포커스 추가
+        }
+
+        // 버튼 외 공간 클릭 시 포커스 제거
+        $(document).click(function () {
+          $(".map img").removeClass("active");
+          $(".button-box button").removeClass("focus"); // 버튼에서도 focus 제거
+        });
+
+        // 버튼 클릭 시 기본 동작 방지 (필요시)
+        return false;
+      });
+    }
+
+    btn_focus_n__init();
+
+    //메뉴 탭
+    function changeTab(tabNumber) {
+      event.preventDefault();
+      // 메뉴 탭 활성화
+      if (tabNumber === 1) {
+        $(".MenuTab-1").addClass("active");
+        $(".MenuTab-2").removeClass("active");
+      } else if (tabNumber === 2) {
+        $(".MenuTab-2").addClass("active");
+        $(".MenuTab-1").removeClass("active");
+      }
+
+      // 콘텐츠 박스 활성화
+      if (tabNumber === 1) {
+        $(".content-box-1").addClass("active");
+        $(".content-box-2").removeClass("active");
+      } else if (tabNumber === 2) {
+        $(".content-box-2").addClass("active");
+        $(".content-box-1").removeClass("active");
+      }
+    }
+
+    //Mobile Swiper
+    var swiper = new Swiper(".mySwiper-m", {
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: false,
+      },
+    });
+
+    //Mobile TopBar
+    function TopBar__init() {
+      $(".Mobile .Topbar > ul img").click(function (e) {
+        e.stopPropagation(); // 이벤트 버블링 방지
+        $(".Mobile .Topbar > ul > li > ul").addClass("active");
+      });
+
+      $(document).click(function () {
+        $(".Mobile .Topbar > ul > li > ul").removeClass("active");
+      });
+
+      $(".Mobile .Topbar > ul > li > ul").click(function (e) {
+        e.stopPropagation(); // 드롭다운 내부 클릭 시 닫힘 방지
+      });
+    }
+
+    TopBar__init();
+
+    //캠페인 알림 신청 팝업
+    function Popup__show() {
+      $(".Bg").addClass("active");
+      $("body").css("overflow", "hidden");
+    }
+
+    function Popup__hide() {
+      $(".Bg").removeClass("active");
+      $("body").css("overflow", "visible");
+    }
+
+    function Popup__init() {
+      $(".btn_notification").click(function () {
+        Popup__show();
+      });
+
+      $(".clear").click(function () {
+        Popup__hide();
+      });
+    }
+
+    $(document).ready(function () {
+      Popup__init(); // 문서가 준비되면 초기화
+    });
+
+    //Mobile 캠페인 알림 신청 팝업
+    function Popup__show_m() {
+      $(".Bg-m").addClass("active");
+      $("body").css("overflow", "hidden");
+    }
+
+    function Popup__hide_m() {
+      $(".Bg-m").removeClass("active");
+      $("body").css("overflow", "visible");
+    }
+
+    function Popup__init_m() {
+      $(".btn_notification-m").click(function () {
+        Popup__show_m();
+      });
+
+      $(".clear-m").click(function () {
+        Popup__hide_m();
+      });
+    }
+
+    $(document).ready(function () {
+      Popup__init_m(); // 문서가 준비되면 초기화
+    });
+  </script>
+</html>
